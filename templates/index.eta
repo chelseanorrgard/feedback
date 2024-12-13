@@ -1,0 +1,42 @@
+<html>
+<head>
+    <title>Feedback Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .feedback-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>How would you rate this experience?</h1>
+    <div class="feedback-buttons">
+        <form action="/feedbacks/1" method="post">
+            <button type="submit">Poor</button>
+        </form>
+        <form action="/feedbacks/2" method="post">
+            <button type="submit">Fair</button>
+        </form>
+        <form action="/feedbacks/3" method="post">
+            <button type="submit">Good</button>
+        </form>
+        <form action="/feedbacks/4" method="post">
+            <button type="submit">Very good</button>
+        </form>
+        <form action="/feedbacks/5" method="post">
+            <button type="submit">Excellent</button>
+        </form>
+    </div>
+</body>
+</html>
